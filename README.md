@@ -56,14 +56,15 @@ Here are some of the technologies I work with:
 
 ### 📈 My GitHub Stats
 
-<p align="center">
-  <a href="https://github.com/kleber-code">
-    <img src="https://github-readme-stats.vercel.app/api?username=kleber-code&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  </a>
-  <a href="https://github.com/kleber-code">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kleber-code&layout=compact&theme=dark"/>
-  </a>
-</p>
+![kleber-code's Stats](https://github-readme-stats.vercel.app/api?username=kleber-code&theme=vue-dark&show_icons=true&hide_border=false&count_private=true)
+![kleber-code's Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleber-code&theme=vue-dark&hide_border=false)
+![kleber-code's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kleber-code&theme=vue-dark&show_icons=true&hide_border=false&layout=compact)
+
+### 📈 My Pinned Repos
+
+<a href="https://github.com/kleber-code/ushka">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=kleber-code&repo=ushka" />
+</a>
 
 ---
 
