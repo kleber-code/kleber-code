@@ -2,11 +2,7 @@
 
 ### 👨‍💻 Software Engineer | Python Fullstack Developer | Information Security Enthusiast
 
-I am a Software Engineer with 1.5 years of experience, focused on creating secure and efficient solutions. My specialty is **Fullstack Development with Python/Django** and **Information Security**.
-
-I currently lead process automation and cyber defense projects at **SCM**, where I design secure networks and conduct proactive threat monitoring. I am also proficient in building modern user interfaces with **Tailwind CSS**, **Bootstrap**, and **Bulma**.
-
-I am currently pursuing a Computer Science degree and actively seeking opportunities to apply my engineering and security skills to build and protect robust systems.
+I am a Software Engineer with a specialization in Fullstack Development and a strong focus on Information Security. At SCM, I drive process automation and cyber defense initiatives, from secure network engineering to proactive threat monitoring. I am passionate about building modern user interfaces and robust, protected systems.
 
 ---
 
@@ -40,8 +36,11 @@ Here are some of the technologies I work with:
   <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
   </a>
-  <a href="httpsias.io/" target="_blank" rel="noreferrer">
-    <img src="https://img.shields.io/badge/Bulma-00D1B2?style=for-the-badge&logo=bulma&logoColor=white" alt="Bulma" />
+  <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  </a>
+  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+    <img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native" />
   </a>
 </p>
 
@@ -49,6 +48,7 @@ Here are some of the technologies I work with:
 <p align="left">
   <img src="https://img.shields.io/badge/Information_Security-FF0000?style=for-the-badge&logo=linuxsecurity&logoColor=white" alt="Information Security" />
   <img src="https://img.shields.io/badge/Network_Administration-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Network Administration" />
+    <img src="https://img.shields.io/badge/Incident_Response-228B22?style=for-the-badge&logo=bugbounty&logoColor=white" alt="Incident Response" />
   <img src="https://img.shields.io/badge/AI_Systems-4B8BBE?style=for-the-badge" alt="AI Systems" />
 </p>
 

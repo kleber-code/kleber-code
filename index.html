@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleber Lucas | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); }
+        .skill-tag { background-color: theme('colors.slate.700'); color: theme('colors.slate.300'); }
+        .dark .skill-tag { background-color: theme('colors.slate.800'); }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 transition-colors duration-300">
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+        <!-- Sun Icon -->
+        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" /></svg>
+        <!-- Moon Icon -->
+        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" /></svg>
+    </button>
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header / Hero Section -->
+        <header class="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0 sm:space-x-8 py-16">
+            <img src="assets/my_photo.png" alt="Kleber Lucas" class="w-32 h-32 rounded-full object-cover border-4 border-slate-200 dark:border-slate-700 shadow-lg sm:w-40 sm:h-40 md:w-48 md:h-48">
+            <div class="text-center sm:text-left">
+                <h1 class="text-4xl font-bold text-slate-900 dark:text-white">Kleber Lucas</h1>
+                <p class="text-xl text-slate-600 dark:text-slate-400 mt-1">Software Engineer | Fullstack & Information Security</p>
+                <div class="mt-4 flex justify-center sm:justify-start space-x-4 text-slate-500 dark:text-slate-400">
+                    <a href="mailto:kleber.code@gmail.com" class="hover:text-orange-500">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kleber-code" target="_blank" class="hover:text-orange-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                    </a>
+                    <a href="https://github.com/kleber-code" target="_blank" class="hover:text-orange-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="space-y-16">
+
+            <!-- About Section -->
+            <section id="about">
+                <h2 class="text-2xl font-bold font-mono border-b-2 border-orange-500 pb-2 mb-4">/about_me</h2>
+                <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                    Software Engineer with a specialization in Fullstack Development and a strong focus on Information Security. At SCM, I drive process automation and cyber defense initiatives, from secure network engineering to proactive threat monitoring. I am passionate about building modern user interfaces and robust, protected systems.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2 class="text-2xl font-bold font-mono border-b-2 border-orange-500 pb-2 mb-6">/skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Python</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Django</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Information Security</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Network Administration</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">AI Systems</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Tailwind CSS</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Bootstrap</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">React Native</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Next.js</span>
+                    <span class="skill-tag font-mono px-3 py-1 rounded-md">Incident Response</span>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <h2 class="text-2xl font-bold font-mono border-b-2 border-orange-500 pb-2 mb-8">/experience</h2>
+                <div class="space-y-10">
+                    <!-- SCM -->
+                    <div class="flex">
+                        <div class="w-1/4 font-mono text-sm text-slate-500 dark:text-slate-400">Jul 2024 - Present</div>
+                        <div class="w-3/4 pl-8 border-l-2 border-slate-200 dark:border-slate-700">
+                            <h3 class="text-xl font-bold">Software Engineer</h3>
+                            <p class="text-md text-slate-600 dark:text-slate-300 mb-2">SCM</p>
+                            <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+                                <li>Led design and implementation of Python-based automation to optimize internal processes.</li>
+                                <li>Engineered corporate network segmentation to strengthen security and access control.</li>
+                                <li>Proactively monitored the dark web, identifying and mitigating data leaks before exploitation.</li>
+                                <li>Conducted phishing simulations and delivered security awareness training to sales teams.</li>
+                                <li>Performed incident response, successfully intercepting an active phishing attack.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- IFPBOFICIAL -->
+                    <div class="flex">
+                        <div class="w-1/4 font-mono text-sm text-slate-500 dark:text-slate-400">Apr 2022 - Jul 2022</div>
+                        <div class="w-3/4 pl-8 border-l-2 border-slate-200 dark:border-slate-700">
+                            <h3 class="text-xl font-bold">Bolsista (Research Fellow)</h3>
+                            <p class="text-md text-slate-600 dark:text-slate-300 mb-2">IFPBOFICIAL</p>
+                            <ul class="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
+                                <li>Developed an end-to-end automation system for smart greenhouses.</li>
+                                <li>Built a React Native mobile app and a Next.js web dashboard for remote monitoring.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2 class="text-2xl font-bold font-mono border-b-2 border-orange-500 pb-2 mb-8">/projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Ushka Project -->
+                    <div class="glass rounded-lg overflow-hidden border border-slate-200 dark:border-slate-800 transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                        <div class="w-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden aspect-video">
+                            <img src="assets/ushka_danger.png" alt="Ushka Framework" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="text-xl font-bold mb-2">Ushka Framework</h3>
+                            <p class="text-slate-700 dark:text-slate-300 mb-4 flex-grow">A minimal, developer-first Python web framework with a focus on visual DX, zero boilerplate, and performance.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="skill-tag text-xs font-mono px-2 py-1 rounded-md">Python</span>
+                                <span class="skill-tag text-xs font-mono px-2 py-1 rounded-md">ASGI</span>
+                                <span class="skill-tag text-xs font-mono px-2 py-1 rounded-md">Jinja2</span>
+                                <span class="skill-tag text-xs font-mono px-2 py-1 rounded-md">CLI</span>
+                            </div>
+                            <a href="https://github.com/kleber-code/ushka" target="_blank" class="font-mono text-orange-500 hover:underline mt-auto">View on GitHub &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- GitHub CTA -->
+                    <div class="glass rounded-lg p-6 flex flex-col items-center justify-center text-center border-2 border-dashed border-slate-300 dark:border-slate-700 transform hover:scale-105 transition-transform duration-300">
+                         <svg class="w-12 h-12 text-slate-500 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+                        <h3 class="text-xl font-bold">More on GitHub</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-2 mb-4">Explore more of my work and open source contributions.</p>
+                        <a href="https://github.com/kleber-code" target="_blank" class="font-mono text-orange-500 hover:underline">@kleber-code &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Education Section -->
+            <section id="education">
+                <h2 class="text-2xl font-bold font-mono border-b-2 border-orange-500 pb-2 mb-6">/education</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-lg font-bold">Bachelor of Science, Computer Science</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Estácio (2025 - 2030)</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold">Technical High School Diploma, Computer Science</h3>
+                        <p class="text-slate-600 dark:text-slate-400">IFPB Campus Santa Rita (2020 - 2022)</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center py-10 mt-16 border-t border-slate-200 dark:border-slate-800">
+            <p class="text-slate-500 dark:text-slate-400 font-mono">Designed and built by Kleber Lucas</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
