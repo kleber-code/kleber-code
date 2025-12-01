@@ -58,11 +58,6 @@ Here are some of the technologies I work with:
 
 ![kleber-code's Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleber-code&theme=vue-dark&hide_border=false)
 
-### 📈 My Pinned Repos
-
-<a href="https://github.com/kleber-code/ushka">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=kleber-code&repo=ushka" />
-</a>
 
 ---
 
