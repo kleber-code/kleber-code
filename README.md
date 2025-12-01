@@ -56,9 +56,7 @@ Here are some of the technologies I work with:
 
 ### 📈 My GitHub Stats
 
-![kleber-code's Stats](https://github-readme-stats.vercel.app/api?username=kleber-code&theme=vue-dark&show_icons=true&hide_border=false&count_private=true)
 ![kleber-code's Streak](https://github-readme-streak-stats.herokuapp.com/?user=kleber-code&theme=vue-dark&hide_border=false)
-![kleber-code's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kleber-code&theme=vue-dark&show_icons=true&hide_border=false&layout=compact)
 
 ### 📈 My Pinned Repos
 
